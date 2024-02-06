@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const ProductsService = require('./../services/producto.service');
+const ProductsService = require('../services/producto.service');
 
-const validatorHandler = require('./../middlewares/validator.handler')
-const { createProductSchema, updateProductSchema, getProductSchema } = require('./../schemas/products.schema')
+const validatorHandler = require('../middlewares/validator.handler')
+const { createProductSchema, updateProductSchema, getProductSchema } = require('../schemas/products.schema')
 const serviceProducto = new ProductsService();
 
 // Mock data for users and products
